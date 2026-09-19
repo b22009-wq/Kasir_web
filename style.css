@@ -1,0 +1,457 @@
+/* =========================
+   RESET & DASAR
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1f2937;
+}
+
+
+/* =========================
+   HEADER / TOP BAR
+========================= */
+
+.top {
+    height: 68px;
+    background: #1e3a8a;
+    color: white;
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top b {
+    font-size: 20px;
+}
+
+.top small {
+    display: block;
+    opacity: 0.75;
+}
+
+.top a {
+    color: white;
+    text-decoration: none;
+    background: #ffffff22;
+    padding: 9px 12px;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+
+/* =========================
+   LAYOUT
+========================= */
+
+.layout {
+    display: flex;
+    min-height: calc(100vh - 108px);
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+aside {
+    width: 220px;
+    background: white;
+    padding: 18px 12px;
+    box-shadow: 1px 0 5px #ddd;
+}
+
+aside a {
+    display: block;
+    padding: 13px;
+    text-decoration: none;
+    color: #374151;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+aside a:hover {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    flex: 1;
+    padding: 28px;
+    max-width: 1250px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    margin: 0 0 5px;
+}
+
+.title p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   PANEL
+========================= */
+
+.panel {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px #0000000d;
+}
+
+
+/* =========================
+   STATISTIK DASHBOARD
+========================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.stats > div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.stats span {
+    font-size: 25px;
+}
+
+.stats h2 {
+    margin: 10px 0 3px;
+}
+
+.stats p {
+    margin: 0;
+    color: #6b7280;
+}
+
+
+/* =========================
+   MENU CEPAT
+========================= */
+
+.quick {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.quick a {
+    text-decoration: none;
+    background: #eff6ff;
+    color: #1e3a8a;
+    padding: 18px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table {
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background: #f9fafb;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    border: 0;
+    text-decoration: none;
+    background: #e5e7eb;
+    color: #374151;
+    padding: 10px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.primary {
+    background: #2563eb;
+    color: white;
+}
+
+.edit {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.delete {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.small {
+    padding: 7px 10px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+    max-width: 650px;
+}
+
+.form label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 7px;
+}
+
+.form input,
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.form textarea {
+    min-height: 90px;
+}
+
+
+/* =========================
+   ACTION FORM
+========================= */
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   ALERT / NOTIFIKASI
+========================= */
+
+.alert {
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1e3a8a
+    );
+    padding: 20px;
+}
+
+.loginbox {
+    background: white;
+    width: 100%;
+    max-width: 410px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px #0003;
+}
+
+
+/* =========================
+   LOGO LOGIN
+========================= */
+
+.logo {
+    width: 65px;
+    height: 65px;
+    background: #eff6ff;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    margin: auto auto 15px;
+}
+
+.loginbox h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin: 0;
+}
+
+.loginbox > p {
+    text-align: center;
+    color: #6b7280;
+}
+
+
+/* =========================
+   FORM LOGIN
+========================= */
+
+.loginbox label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 7px;
+}
+
+.loginbox input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+.full {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   AKUN DEMO
+========================= */
+
+.demo {
+    margin-top: 18px;
+    padding: 12px;
+    background: #f3f4f6;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    color: #6b7280;
+    height: 40px;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 800px) {
+    aside {
+        width: 170px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    aside {
+        display: none;
+    }
+
+    .stats,
+    .quick {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 18px;
+    }
+
+    .top {
+        padding: 0 15px;
+    }
+
+    .top > div:last-child {
+        font-size: 12px;
+    }
+}
